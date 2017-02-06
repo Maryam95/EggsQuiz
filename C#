@@ -9,39 +9,15 @@ namespace Rextester
     {
         public static void Main(string[] args)
         {
-       //Note 1: As i%3=i%7=i%9==0, we know that at least i should starts from 63
-       //Note 2: As i%2 is not 0, so we know that the number of eggs is odd so regarding to the first value of i that is 1 we can increase i by 2
-       
-             for(var i=1;;i++)
-            {
-                if(i%2==1)
-                {
-                    if(i%3==0)
-                     {
-                        if(i%4==1)
-                         {
-                            if(i%5==4)
-                             {
-                                if(i%6==3)
-                                 {
-                                    if(i%7==0)
-                                     {
-                                        if(i%8==1)
-                                          {
-                                            if(i%9==0)
-                                            {
-                                                Console.WriteLine("The minimum nuber of eggs is {0}.",i);
-                                                break;
-                                            }
-                
-                                          }
-                                      }
-                                  }
-                              }
-                          }
-                      }
-                 }
-            }
-        }
-    }
-}
+      
+            for(var i=0;;i++)
+              {
+                 if
+                    (i % 2 ==1 && i % 3 == 0 && i % 4==1 && i % 5==4 && i % 6==3 && i % 7==0 && i % 8==1 && i % 9==0)
+                    {
+                     Console.WriteLine("the number of eggs is {0}", i);break;
+                    }
+              }
+         }
+     }
+ }
