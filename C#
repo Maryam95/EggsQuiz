@@ -9,7 +9,10 @@ namespace Rextester
     {
         public static void Main(string[] args)
         {
-            for(var i=1;;i++)
+       //Note 1: As i%3=i%7=i%9==0, we know that at least i should starts from 63
+       //Note 2: As i%2 is not 0, so we know that the number of eggs is odd so regarding to the first value of i that is 1 we can increase i by 2
+       
+             for(var i=1;;i++)
             {
                 if(i%2==1)
                 {
