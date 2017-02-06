@@ -1,0 +1,8 @@
+DECLARE @Num INT = 0;
+
+while not(@Num % 2 = 1 and @Num%3 = 0 and @Num%4=1 and @Num%5=4 and @Num%6=3 and @Num%7=0 and @Num%8=1 and @Num%9=0) 
+
+SET @Num = @Num + 1;
+
+PRINT 'The number of eggs is ' + convert(varchar, @Num);
+
