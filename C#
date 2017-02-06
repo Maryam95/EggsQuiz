@@ -1,0 +1,44 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text.RegularExpressions;
+
+namespace Rextester
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            for(var i=1;;i++)
+            {
+                if(i%2==1)
+                {
+                    if(i%3==0)
+                     {
+                        if(i%4==1)
+                         {
+                            if(i%5==4)
+                             {
+                                if(i%6==3)
+                                 {
+                                    if(i%7==0)
+                                     {
+                                        if(i%8==1)
+                                          {
+                                            if(i%9==0)
+                                            {
+                                                Console.WriteLine("The minimum nuber of eggs is {0}.",i);
+                                                break;
+                                            }
+                
+                                          }
+                                      }
+                                  }
+                              }
+                          }
+                      }
+                 }
+            }
+        }
+    }
+}
